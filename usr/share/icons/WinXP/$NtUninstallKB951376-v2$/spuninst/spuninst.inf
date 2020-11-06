@@ -1,0 +1,285 @@
+
+[Version]
+
+    Signature = "$Windows NT$"
+    NtServicePackVersion = 0
+    NtServicePackVersionText = "KB951376-v2"
+    NtServicePackVersionFullText = "Windows XP セキュリティ更新 (KB951376-v2)"
+    NtServicePackPreviousVersion = 768
+    NtServicePackPreviousVersionText = "KB951376-v2 がありません"
+    IEVersion = "0.0.0.0"
+    DisplayTitle = "KB951376-v2"
+    SP_TITLE = "Windows XP セキュリティ更新 (KB951376-v2)"
+    RebootRequired  = 0
+
+[SourceDisksNames]
+
+    1 = "Windows NT Service Pack Uninstall Directory"
+
+[SourceDisksFiles]
+
+
+[DestinationDirs]
+
+    "ProductCatalogsToInstall.delete.files" = 0, "ProductCatalogsToInstall"
+    "SystemRoot\$hf_mig$\kb951376-v2\sp3qfe.delete.files" = 10, "$hf_mig$\kb951376-v2\sp3qfe"
+    "SystemRoot\driver cache\i386.delete.files" = 10, "driver cache\i386"
+    "SystemRoot\system32\dllcache.delete.files" = 10, "system32\dllcache"
+    "SystemRoot\system32\drivers.delete.files" = 10, "system32\drivers"
+
+[RestoreFiles]
+
+
+    DelFiles  = "ProductCatalogsToInstall.delete.files"
+    DelFiles  = "SystemRoot\$hf_mig$\kb951376-v2\sp3qfe.delete.files"
+    DelFiles  = "SystemRoot\driver cache\i386.delete.files"
+    DelFiles  = "SystemRoot\system32\dllcache.delete.files"
+    DelFiles  = "SystemRoot\system32\drivers.delete.files"
+
+[RestoreFiles.NoDelay]
+
+[ProductCatalogsToInstall.delete.files]
+
+    kb951376-v2.cat
+
+[SystemRoot\$hf_mig$\kb951376-v2\sp3qfe.delete.files]
+
+    bthport.sys
+
+[SystemRoot\driver cache\i386.delete.files]
+
+    bthport.sys
+
+[SystemRoot\system32\dllcache.delete.files]
+
+    bthport.sys
+
+[SystemRoot\system32\drivers.delete.files]
+
+    bthport.sys
+
+[Reg.Delete.Keys]
+
+    HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\KB951376-v2"
+    HKLM,"SOFTWARE\Microsoft\Updates\Windows XP\SP4\KB951376-v2"
+
+[Reg.Restore.Values]
+
+    HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup","","LogLevel",4,4,\
+        00,00,00,20
+
+[ProcessesToRunBeforeUninstall]
+
+[ProcessesToRunBeforeUninstall.IP]
+
+[ProcessesToRunAfterCopyingUninstall]
+
+[ProcessesToRunAfterCopyingUninstall.IP]
+
+[ProcessesToRunAfterUninstall]
+
+[ProcessesToRunAfterUninstall.IP]
+
+[ProcessesToRunAfterReboot]
+
+[ProcessesToRunAfterReboot.IP]
+
+
+[DeviceClassList]
+
+[ProcessesToRunAfterReboot.RebootNotRequired]
+
+[ProcessesToRunAfterReboot.RebootNotRequired.IP]
+
+
+[GlobalRegistryChanges]
+	AddReg	=	Add.Reg
+	DelReg	=	Del.Reg
+
+[Configuration]
+
+    UninstallationType    = "Hotfix"
+    UnInstallLogFileName  = "KB951376-v2Uninst.log"
+    EventLogKeyName       = "NtServicePack"
+    ProductName           = ""
+    CustomizationDll      = ""
+    WaitTimeForServiceStop = 0
+    OverwriteThirdParty    = 0
+    RestartDevice          = 0
+    ServiceFileInUseDetect       = "0"
+
+[ProductInstall.ClassInfsToInstallIfExist]
+[ProductInstall.ClassInfsToInstallIfExist.IP]
+[ProductInstall.ClassInfsToInstallAlways]
+[ProductInstall.ClassInfsToInstallAlways.IP]
+
+[SourceFileInfo]
+c:\windows\system32\drivers\bthport.sys = D2D5290932B008090CC22296B39B66A6 
+c:\windows\driver cache\i386\bthport.sys = D2D5290932B008090CC22296B39B66A6 
+c:\windows\system32\dllcache\bthport.sys = D2D5290932B008090CC22296B39B66A6 
+c:\windows\$hf_mig$\kb951376-v2\sp3qfe\bthport.sys = 218C66759857C8780B487A26A333D6E1 
+
+[SnapShot.Install]
+
+"Windows Internet Explorer 8"
+"Windows XP セキュリティ更新 (KB2115168)"
+"Windows XP セキュリティ更新 (KB2229593)"
+"Windows XP セキュリティ更新 (KB2296011)"
+"Windows XP セキュリティ更新 (KB2347290)"
+"Windows Media Player (KB2378111) セキュリティ問題の修正プログラム"
+"Windows XP セキュリティ更新 (KB2387149)"
+"Windows XP セキュリティ更新 (KB2393802)"
+"Windows XP セキュリティ更新 (KB2419632)"
+"Windows XP セキュリティ更新 (KB2423089)"
+"Windows XP セキュリティ更新 (KB2443105)"
+"Windows XP セキュリティ更新 (KB2478960)"
+"Windows XP セキュリティ更新 (KB2478971)"
+"Windows XP セキュリティ更新 (KB2479943)"
+"Windows XP セキュリティ更新 (KB2481109)"
+"Windows XP セキュリティ更新 (KB2483185)"
+"Windows XP セキュリティ更新 (KB2485663)"
+"Windows XP セキュリティ更新 (KB2506212)"
+"Windows XP セキュリティ更新 (KB2507938)"
+"Windows XP セキュリティ更新 (KB2508429)"
+"Windows XP セキュリティ更新 (KB2509553)"
+"Windows XP セキュリティ更新 (KB2535512)"
+"Windows XP セキュリティ更新 (KB2536276-v2)"
+"Windows XP セキュリティ更新 (KB2544893-v2)"
+"Microsoft Windows 用の セキュリティ更新プログラム (KB2564958)"
+"Windows XP セキュリティ更新 (KB2566454)"
+"Windows XP セキュリティ更新 (KB2570947)"
+"Windows XP セキュリティ更新 (KB2584146)"
+"Windows XP セキュリティ更新 (KB2585542)"
+"Windows XP セキュリティ更新 (KB2592799)"
+"Windows XP セキュリティ更新 (KB2598479)"
+"Windows XP セキュリティ更新 (KB2603381)"
+"Windows XP セキュリティ更新 (KB2619339)"
+"Windows XP セキュリティ更新 (KB2620712)"
+"Windows XP セキュリティ更新 (KB2631813)"
+"Windows XP セキュリティ更新 (KB2653956)"
+"Windows XP セキュリティ更新 (KB2655992)"
+"Windows XP セキュリティ更新 (KB2659262)"
+"Windows XP セキュリティ更新 (KB2661637)"
+"Windows XP セキュリティ更新 (KB2676562)"
+"Windows XP セキュリティ更新 (KB2686509)"
+"Windows XP セキュリティ更新 (KB2691442)"
+"Windows XP セキュリティ更新 (KB2698365)"
+"Windows XP セキュリティ更新 (KB2705219-v2)"
+"Windows XP セキュリティ更新 (KB2712808)"
+"Windows XP セキュリティ更新 (KB2719985)"
+"Windows XP セキュリティ更新 (KB2723135-v2)"
+"Windows XP セキュリティ更新 (KB2727528)"
+"Windows XP 更新 (KB2749655)"
+"Windows XP セキュリティ更新 (KB2757638)"
+"Windows XP セキュリティ更新 (KB2770660)"
+"Windows XP セキュリティ更新 (KB2780091)"
+"Windows XP セキュリティ更新 (KB2802968)"
+"Windows XP セキュリティ更新 (KB2807986)"
+"Windows XP セキュリティ更新 (KB2813345)"
+"Windows XP セキュリティ更新 (KB2820917)"
+"Windows XP セキュリティ更新 (KB2834886)"
+"Windows XP セキュリティ更新 (KB2847311)"
+"Windows XP セキュリティ更新 (KB2850869)"
+"Windows XP セキュリティ更新 (KB2859537)"
+"Windows XP セキュリティ更新 (KB2862152)"
+"Windows XP セキュリティ更新 (KB2862330)"
+"Windows XP セキュリティ更新 (KB2862335)"
+"Windows XP セキュリティ更新 (KB2864063)"
+"Windows XP セキュリティ更新 (KB2876217)"
+"Windows XP セキュリティ更新 (KB2876331)"
+"Windows XP セキュリティ更新 (KB2892075)"
+"Windows XP セキュリティ更新 (KB2893294)"
+"Windows XP セキュリティ更新 (KB2898715)"
+"Windows XP セキュリティ更新 (KB2900986)"
+"Windows XP 更新 (KB2904266)"
+"Windows Internet Explorer 8 セキュリティ更新 (KB2909921)"
+"Windows XP セキュリティ更新 (KB2914368)"
+"Windows XP セキュリティ更新 (KB2916036)"
+"Windows XP セキュリティ更新 (KB2929961)"
+"Windows XP セキュリティ更新 (KB2930275)"
+"Windows XP 更新 (KB2934207)"
+"Windows XP 更新 (KB898461)"
+"Windows XP セキュリティ更新 (KB923561)"
+"Windows XP セキュリティ更新 (KB923789)"
+"Windows XP セキュリティ更新 (KB946648)"
+"Windows XP セキュリティ更新 (KB950762)"
+"Windows XP セキュリティ更新 (KB950974)"
+"Windows XP セキュリティ更新 (KB951376-v2)"
+"Windows XP セキュリティ更新 (KB952004)"
+"Windows Media Player (KB952069) セキュリティ問題の修正プログラム"
+"Windows XP ホットフィックス (KB952287)"
+"Windows XP セキュリティ更新 (KB952954)"
+"Windows Media Player (KB954155) セキュリティ問題の修正プログラム"
+"Windows XP 更新 (KB955759)"
+"Windows XP セキュリティ更新 (KB956572)"
+"Windows XP セキュリティ更新 (KB956844)"
+"Windows XP セキュリティ更新 (KB959426)"
+"Windows XP セキュリティ更新 (KB960803)"
+"Windows XP セキュリティ更新 (KB960859)"
+"Windows XP 更新 (KB968389)"
+"Windows XP セキュリティ更新 (KB969059)"
+"Windows XP 更新 (KB971029)"
+"Windows XP セキュリティ更新 (KB971657)"
+"Windows XP セキュリティ更新 (KB972270)"
+"Windows XP セキュリティ更新 (KB973507)"
+"Windows Media Player (KB973540) セキュリティ問題の修正プログラム"
+"Windows XP 更新 (KB973815)"
+"Windows XP セキュリティ更新 (KB973869)"
+"Windows XP セキュリティ更新 (KB973904)"
+"Windows XP セキュリティ更新 (KB974112)"
+"Windows XP セキュリティ更新 (KB974318)"
+"Windows XP セキュリティ更新 (KB974392)"
+"Windows XP セキュリティ更新 (KB974571)"
+"Windows XP セキュリティ更新 (KB975025)"
+"Windows XP セキュリティ更新 (KB975467)"
+"Windows Media Player (KB975558) セキュリティ問題の修正プログラム"
+"Windows XP セキュリティ更新 (KB975560)"
+"Windows XP セキュリティ更新 (KB977816)"
+"Windows XP セキュリティ更新 (KB977914)"
+"Windows XP セキュリティ更新 (KB978338)"
+"Windows XP セキュリティ更新 (KB978542)"
+"Windows Media Player (KB978695) セキュリティ問題の修正プログラム"
+"Windows XP セキュリティ更新 (KB978706)"
+"Windows XP セキュリティ更新 (KB979309)"
+"Windows XP セキュリティ更新 (KB979482)"
+"Windows XP セキュリティ更新 (KB979687)"
+"Windows XP セキュリティ更新 (KB981997)"
+"Windows XP セキュリティ更新 (KB982132)"
+"Windows XP セキュリティ更新 (KB982665)"
+"Microsoft .NET Framework 2.0"
+"Microsoft .NET Framework 4 Client Profile"
+"Microsoft .NET Framework 4 Client Profile Language Pack - 日本語"
+"Oracle VM VirtualBox Guest Additions 6.1.6"
+"UltraUXThemePatcher"
+"Windows Media Format Runtime"
+"Windows Media Player 10"
+"ルート証明書の更新"
+"ゲーム"
+"ペイント"
+"メディア プレーヤー"
+"アクセサリとユーティリティ"
+"マウス ポインタ"
+"インターネット ゲートウェイ デバイスの検出とクライアントの制御"
+"ダイヤラ"
+"ハーツ"
+"スパイダ ソリティア"
+"Windows Media Player"
+"マインスイーパ"
+"ネットワーク サービス"
+"文字コード表"
+"サウンド レコーダー"
+"Internet Explorer"
+"フリーセル"
+"Outlook Express"
+"ボリューム コントロール"
+"クリップボード ビューア"
+"Windows Messenger"
+"MSN Explorer"
+"ハイパーターミナル"
+"電卓"
+"チャット"
+"デスクトップの壁紙"
+"アクセサリ"
+"インターネット ゲーム"
+"ソリティア"
+"ドキュメント テンプレート"

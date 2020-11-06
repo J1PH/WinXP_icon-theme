@@ -1,0 +1,192 @@
+
+[Version]
+
+    Signature = "$Windows NT$"
+    NtServicePackVersion = 0
+    NtServicePackVersionText = "KB923561"
+    NtServicePackVersionFullText = "Windows XP セキュリティ更新 (KB923561)"
+    NtServicePackPreviousVersion = 768
+    NtServicePackPreviousVersionText = "KB923561 がありません"
+    IEVersion = "0.0.0.0"
+    DisplayTitle = "KB923561"
+    SP_TITLE = "Windows XP セキュリティ更新 (KB923561)"
+    RebootRequired  = 0
+
+[SourceDisksNames]
+
+    1 = "Windows NT Service Pack Uninstall Directory"
+
+[SourceDisksFiles]
+
+    mswrd8.wpc   = 1
+    wordpad.exe  = 1
+    sysmain.sdb  = 1
+    sysmain.sdb  = 1
+    wordpad.exe  = 1
+
+[DestinationDirs]
+
+    "c:\program files\windows nt\accessories.restore.files" = 0, "c:\program files\windows nt\accessories"
+    "ProductCatalogsToInstall.delete.files" = 0, "ProductCatalogsToInstall"
+    "SystemRoot\$hf_mig$\kb923561\sp3qfe.delete.files" = 10, "$hf_mig$\kb923561\sp3qfe"
+    "SystemRoot\apppatch.restore.files" = 10, "apppatch"
+    "SystemRoot\system32.delete.files" = 10, "system32"
+    "SystemRoot\system32\dllcache.restore.files" = 10, "system32\dllcache"
+
+[RestoreFiles]
+
+    CopyFiles = "c:\program files\windows nt\accessories.restore.files"
+    CopyFiles = "SystemRoot\apppatch.restore.files"
+    CopyFiles = "SystemRoot\system32\dllcache.restore.files"
+
+    DelFiles  = "ProductCatalogsToInstall.delete.files"
+    DelFiles  = "SystemRoot\$hf_mig$\kb923561\sp3qfe.delete.files"
+    DelFiles  = "SystemRoot\system32.delete.files"
+
+[RestoreFiles.NoDelay]
+
+[c:\program files\windows nt\accessories.restore.files]
+
+    mswrd8.wpc
+    wordpad.exe,,,8
+
+[ProductCatalogsToInstall.delete.files]
+
+    kb923561.cat
+
+[SystemRoot\$hf_mig$\kb923561\sp3qfe.delete.files]
+
+    mswrd8.wpc
+    sprv0411.dll
+    sysmain.sdb
+    wordpad.exe
+
+[SystemRoot\apppatch.restore.files]
+
+    sysmain.sdb,,,8
+
+[SystemRoot\system32.delete.files]
+
+    xpsp4res.dll,,,8
+
+[SystemRoot\system32\dllcache.restore.files]
+
+    sysmain.sdb
+    wordpad.exe
+
+[Reg.Delete.Keys]
+
+    HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\KB923561"
+    HKLM,"SOFTWARE\Microsoft\Updates\Windows XP\SP4\KB923561"
+
+[Reg.Restore.Values]
+
+    HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup","","LogLevel",4,4,\
+        00,00,00,20
+
+[ProcessesToRunBeforeUninstall]
+
+[ProcessesToRunBeforeUninstall.IP]
+
+[ProcessesToRunAfterCopyingUninstall]
+
+[ProcessesToRunAfterCopyingUninstall.IP]
+
+[ProcessesToRunAfterUninstall]
+
+[ProcessesToRunAfterUninstall.IP]
+
+[ProcessesToRunAfterReboot]
+
+[ProcessesToRunAfterReboot.IP]
+
+
+[DeviceClassList]
+
+[ProcessesToRunAfterReboot.RebootNotRequired]
+
+[ProcessesToRunAfterReboot.RebootNotRequired.IP]
+
+
+[GlobalRegistryChanges]
+	AddReg	=	Add.Reg
+	DelReg	=	Del.Reg
+
+[Configuration]
+
+    UninstallationType    = "Hotfix"
+    UnInstallLogFileName  = "KB923561Uninst.log"
+    EventLogKeyName       = "NtServicePack"
+    ProductName           = ""
+    CustomizationDll      = ""
+    WaitTimeForServiceStop = 0
+    OverwriteThirdParty    = 0
+    RestartDevice          = 0
+    ServiceFileInUseDetect       = "0"
+
+[ProductInstall.ClassInfsToInstallIfExist]
+[ProductInstall.ClassInfsToInstallIfExist.IP]
+[ProductInstall.ClassInfsToInstallAlways]
+[ProductInstall.ClassInfsToInstallAlways.IP]
+
+[SourceFileInfo]
+c:\windows\apppatch\sysmain.sdb = 3631B3B0873339487D61F49A12B0D101 
+c:\program files\windows nt\accessories\wordpad.exe = 7F1285B663E9C9E1DB8ED1B112CE2131 
+c:\program files\windows nt\accessories\mswrd8.wpc = DD0B3D1668265DF22FFA40571E173506 
+c:\windows\system32\xpsp4res.dll = 639059AE247976E1CAD3502F417B4A45 
+c:\windows\system32\dllcache\wordpad.exe = 7F1285B663E9C9E1DB8ED1B112CE2131 
+c:\windows\system32\dllcache\sysmain.sdb = 3631B3B0873339487D61F49A12B0D101 
+c:\windows\$hf_mig$\kb923561\sp3qfe\wordpad.exe = 3D67D9EFCC562E4E5DE97954B0AA8F29 
+c:\windows\$hf_mig$\kb923561\sp3qfe\sysmain.sdb = C87045485774E36B5B030A6221151FAF 
+c:\windows\$hf_mig$\kb923561\sp3qfe\sprv0411.dll = 639059AE247976E1CAD3502F417B4A45 
+c:\windows\$hf_mig$\kb923561\sp3qfe\mswrd8.wpc = BFCF0468937A18F4B6EBAC8311732B28 
+
+[SnapShot.Install]
+
+"Windows XP セキュリティ更新 (KB2423089)"
+"Windows XP セキュリティ更新 (KB2566454)"
+"Windows XP セキュリティ更新 (KB2584146)"
+"Windows XP セキュリティ更新 (KB2620712)"
+"Windows XP セキュリティ更新 (KB2661637)"
+"Windows XP セキュリティ更新 (KB2914368)"
+"Windows XP 更新 (KB898461)"
+"Windows XP セキュリティ更新 (KB923561)"
+"Windows XP 更新 (KB968389)"
+"Windows XP セキュリティ更新 (KB975467)"
+"Microsoft .NET Framework 2.0"
+"Microsoft .NET Framework 4 Client Profile"
+"Microsoft .NET Framework 4 Client Profile Language Pack - 日本語"
+"Oracle VM VirtualBox Guest Additions 6.1.6"
+"UltraUXThemePatcher"
+"Windows Media Format Runtime"
+"Windows Media Player 10"
+"ルート証明書の更新"
+"ゲーム"
+"ペイント"
+"メディア プレーヤー"
+"アクセサリとユーティリティ"
+"マウス ポインタ"
+"インターネット ゲートウェイ デバイスの検出とクライアントの制御"
+"ダイヤラ"
+"ハーツ"
+"スパイダ ソリティア"
+"Windows Media Player"
+"マインスイーパ"
+"ネットワーク サービス"
+"文字コード表"
+"サウンド レコーダー"
+"Internet Explorer"
+"フリーセル"
+"Outlook Express"
+"ボリューム コントロール"
+"クリップボード ビューア"
+"Windows Messenger"
+"MSN Explorer"
+"ハイパーターミナル"
+"電卓"
+"チャット"
+"デスクトップの壁紙"
+"アクセサリ"
+"インターネット ゲーム"
+"ソリティア"
+"ドキュメント テンプレート"

@@ -1,0 +1,5 @@
+DEL  "c:\windows\$hf_mig$\kb951376-v2\sp3qfe\bthport.sys"
+DEL  "c:\windows\driver cache\i386\bthport.sys"
+DEL  "c:\windows\system32\dllcache\bthport.sys"
+DEL  "c:\windows\system32\drivers\bthport.sys"
+COPY  "C:\WINDOWS\$NtUninstallKB951376-v2$\spuninst\spuninst.txt" "C:\WINDOWS\$NtUninstallKB951376-v2$\spuninst\spuninst.tag" 
